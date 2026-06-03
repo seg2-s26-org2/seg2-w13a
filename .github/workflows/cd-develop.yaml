@@ -1,0 +1,13 @@
+name: wf_cd_develop
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy-develop-job:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Deploy On Render
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
