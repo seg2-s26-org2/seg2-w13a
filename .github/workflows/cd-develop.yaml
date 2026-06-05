@@ -1,0 +1,11 @@
+name: cd-develop
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy-develop-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy on render
+        run: curl -X POST -H ${{secerts.RENDER_DEPLOY_HOOK_SEG2}}
