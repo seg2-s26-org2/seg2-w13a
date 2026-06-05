@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deploy on render
-        run: curl -X POST -H ${{secerts.RENDER_DEPLOY_HOOK_SEG2}}
+        run: curl -X POST -H ${{secrets.RENDER_DEPLOY_HOOK_SEG2}}
