@@ -27,4 +27,4 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Push Docker Image on the Docker Hub
-        run: docker image push imranucp/seg2w13a:v01
+        run: docker image push abdmeh94/seg1w12b:v01
